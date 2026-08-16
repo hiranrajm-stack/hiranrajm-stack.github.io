@@ -538,32 +538,32 @@
       <!-- PROJECT 2 -->
       <article class="proj-card feature reveal">
         <div class="proj-head">
-          <h3>AI-Powered Voice of Customer Intelligence System</h3>
+          <h3>Google E-Commerce Funnel &amp; Retention Analysis</h3>
         </div>
-        <p class="oneline">NLP pipeline that classifies <strong class="num">1,200+</strong> customer reviews across <strong class="num">5</strong> platforms into <strong class="num">8</strong> complaint categories — replacing manual triage with an automated priority report.</p>
+        <p class="oneline">Funnel and cohort retention analysis on <strong class="num">4.3M+</strong> real e-commerce events across <strong class="num">8</strong> weekly cohorts — paired with a business memo generated automatically via the Gemini API.</p>
         <div class="proj-badges">
-          <span class="pbadge">Python</span><span class="pbadge">TextBlob</span><span class="pbadge">BeautifulSoup</span>
-          <span class="pbadge">Pandas</span><span class="pbadge">NLP</span><span class="pbadge">Rule-based AI</span>
+          <span class="pbadge">SQL</span><span class="pbadge">BigQuery</span><span class="pbadge">Window Functions</span>
+          <span class="pbadge">Power BI</span><span class="pbadge">Python</span><span class="pbadge">Gemini API</span>
         </div>
         <ul>
-          <li>Built an AI system that automatically reads and classifies <strong class="num">1,200+</strong> customer reviews across <strong class="num">5</strong> platforms — replacing manual <strong class="num">40</strong>-page complaint Excel sheets with a real-time priority report</li>
-          <li>Engineered a custom urgency scoring model combining NLP sentiment, star ratings and safety-keyword detection to surface Critical defects before they appear in warranty claim data</li>
-          <li>Identified Tread Wear (<strong class="num">35%</strong> of complaints) and Sidewall Defects (safety-risk, urgency <strong class="num">9.4/10</strong>) as top product issues — recommendation directly informed R&amp;D compound review</li>
+          <li>Built the full purchase funnel (view → add to cart → begin checkout → purchase) in BigQuery SQL on Google's public GA4 e-commerce dataset — <strong class="num">4.3M+</strong> real anonymized events from the Google Merchandise Store</li>
+          <li>Used SQL window functions (<code>DATE_TRUNC</code>, <code>DATE_DIFF</code>, cohort self-join) to group users by their first-visit week and measure how many returned in the weeks after — the cohort retention analysis</li>
+          <li>Wrote a Python script that sends the finished findings to the Gemini API and generates the stakeholder business memo automatically — the analysis is mine, the write-up is script-generated from it</li>
         </ul>
         <div class="callout">
           <div class="ctitle">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             Key Finding
           </div>
-          <p>Tread Wear = #1 complaint (<strong class="num">35%</strong>). Sidewall Defects flagged Critical at urgency <strong class="num">9.4/10</strong>. Both independently confirmed the same defect root cause found in Project 1 — two data sources, one conclusion.</p>
+          <p>Only <strong class="num">1.5%</strong> of users who view a product ever purchase. Two separate leaks drive it: <strong class="num">85%</strong> drop off before adding to cart (a demand/merchandising problem) and <strong class="num">85%</strong> of checkout-starters never finish (a friction problem) — two different owners, two different fixes. Retention is just as steep: only <strong class="num">4%</strong> of new users return the week after their first visit, consistent across all 8 cohorts analyzed.</p>
         </div>
         <div class="proj-foot">
-          <a href="https://github.com/hiranrajm-stack/voc-intelligence-system" class="ghbtn" target="_blank" rel="noopener">
+          <a href="https://github.com/hiranrajm-stack/Google-ecommerce-funnel-retention-analysis" class="ghbtn" target="_blank" rel="noopener">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.79 1.08.79 2.18v3.23c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
             View on GitHub
           </a>
         </div>
-        <p class="conf-note">Data synthetically generated to replicate real-world patterns. Actual company data cannot be shared due to confidentiality.</p>
+        <p class="conf-note">Public dataset: Google's own GA4 e-commerce sample data (BigQuery public dataset, Google Merchandise Store).</p>
       </article>
 
       <!-- PROJECT 3 (coming soon) -->
