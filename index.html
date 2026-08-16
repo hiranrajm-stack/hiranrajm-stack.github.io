@@ -505,35 +505,35 @@
     <div class="projects">
 
       <!-- PROJECT 1 -->
-      <article class="proj-card feature reveal">
-        <div class="proj-head">
-          <h3>Predictive Quality Signal Tracker — Product Risk Intelligence System</h3>
-        </div>
-        <p class="oneline">End-to-end product analytics pipeline tracking <strong class="num">5</strong> North Star KPIs across <strong class="num">8</strong> SKUs, <strong class="num">5</strong> regions and <strong class="num">18</strong> months — with automated anomaly detection that flagged <strong class="num">₹118 Crore</strong> in revenue risk.</p>
-        <div class="proj-badges">
-          <span class="pbadge">Python</span><span class="pbadge">MySQL</span><span class="pbadge">Pandas</span>
-          <span class="pbadge">Power BI</span><span class="pbadge">DAX</span><span class="pbadge">Star Schema</span>
-        </div>
-        <ul>
-          <li>Designed a star schema data model and built <strong class="num">6</strong> MySQL KPI views across <strong class="num">3,500+</strong> sales, complaint and returns records — tracking Defect Rate, Warranty Claim Rate, NPS, Return Rate and Revenue at Risk across <strong class="num">8</strong> SKUs over <strong class="num">18</strong> months</li>
-          <li>Implemented rolling <strong class="num">3</strong>-month anomaly detection that flagged MRF-METEOR-8R at <strong class="num">2.8×</strong> its defect baseline, identifying <strong class="num">₹118Cr</strong> revenue at risk and directly informing a batch recall decision</li>
-          <li>Delivered a Power BI dashboard with scatter quadrant analysis, conditional formatting and DAX trend measures — cutting monthly reporting from <strong class="num">3</strong> days to <strong class="num">4</strong> hours</li>
-        </ul>
-        <div class="callout amber">
-          <div class="ctitle">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            Key Finding
-          </div>
-          <p>MRF-METEOR-8R reached a <strong class="num">6.64%</strong> defect rate in mid-2023 — <strong class="num">2.8×</strong> its 3-month baseline. <strong class="num">₹118 Crore</strong> in revenue at risk identified. Batch recall review initiated.</p>
-        </div>
-        <div class="proj-foot">
-          <a href="https://github.com/hiranrajm-stack/predictive-quality-signal-tracker" class="ghbtn" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.79 1.08.79 2.18v3.23c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
-            View on GitHub
-          </a>
-        </div>
-        <p class="conf-note">Data synthetically generated to replicate real-world patterns. Actual company data cannot be shared due to confidentiality.</p>
-      </article>
+<article class="proj-card feature reveal">
+  <div class="proj-head">
+    <h3>Cookie Cats A/B Test — Gate Placement & Retention Analysis</h3>
+  </div>
+  <p class="oneline">Analyzed a real mobile-game A/B test of <strong class="num">90,189</strong> players to determine whether delaying a progression gate improved or hurt player retention — with a statistically rigorous verdict and an AI-automated business memo.</p>
+  <div class="proj-badges">
+    <span class="pbadge">SQL</span><span class="pbadge">BigQuery</span><span class="pbadge">Python</span>
+    <span class="pbadge">statsmodels</span><span class="pbadge">Power BI</span><span class="pbadge">Gemini API</span>
+  </div>
+  <ul>
+    <li>Queried and aggregated Day-1 and Day-7 retention rates across <strong class="num">44,700</strong> control and <strong class="num">45,489</strong> treatment players using BigQuery SQL</li>
+    <li>Ran a two-proportion z-test (<strong class="num">z = 3.16</strong>, <strong class="num">p = 0.0016</strong>) and a 95% confidence interval to separate statistical significance from practical business impact</li>
+    <li>Built an automation script using the Gemini API to generate the executive business memo directly from the statistical output — not manually written</li>
+  </ul>
+  <div class="callout">
+    <div class="ctitle">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Key Finding
+    </div>
+    <p>Moving the gate to level 40 <strong class="num">significantly decreased</strong> Day-7 retention (19.02% → 18.20%, 95% CI: 0.31–1.33pts) with no engagement upside — recommendation: keep the gate at level 30.</p>
+  </div>
+  <div class="proj-foot">
+    <a href="https://github.com/hiranrajm-stack/AB-test-cookie-cats" class="ghbtn" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.42.36.79 1.08.79 2.18v3.23c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+      View on GitHub
+    </a>
+  </div>
+  <p class="conf-note">Public dataset (Kaggle) — real, anonymized mobile game user data.</p>
+</article>
 
       <!-- PROJECT 2 -->
       <article class="proj-card feature reveal">
